@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Righteous&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif
+}
+
+:root{
+    --primary-one: #ffffff;
+    --primary-two: #333;
+    --primary-three: black;
+    --primary-four: #CEE5F2;
+    --primary-five: #2B50AA;
+    --primary-six: #F2F4F3;
+    --primary-seven: #DDDDDD;
+    --primary-eigth: #373F51;
+}
+
+
+/* STYLING HEADER */
+
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 7rem;
+}
+
+
+.header_branding{
+    height: 100%;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_branding h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header_navbar{
+    display: flex;
+    height: 100%;
+    width: 80%;
+}
+
+.navbar_ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar_ul li{
+    padding: 3rem;
+}
+
+.navbar_ul li a{
+    text-decoration: none;
+    color:var(--primary-eigth);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.navbar_ul li a:hover{
+    border-bottom: 2px solid var(--primary-eigth);
+}
+
+.navbar_btn{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_login{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-one);
+    background-color: var(--primary-eigth);
+    font-size: 1rem;
+    font-weight: bolder; 
+}
+
+.btn_login:hover{
+    background-color: var(--primary-one);
+    color: var(--primary-eigth);
+    border: 1px solid var(--primary-eigth);
+    transition: background-color 0.2s ease;
+}
+
+.btn_signup{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 1.5rem;
+
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-one);
+    background-color: var(--primary-eigth);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.btn_signup:hover{
+    background-color: var(--primary-one);
+    color: var(--primary-eigth);
+    border: 1px solid var(--primary-eigth);
+    transition: background-color 0.2s ease;
+}
+
+
+
+main{
+    height: 80vh;
+    width: 80vw;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main_img{
+    width: 50%;
+    height: 100%;
+    background-image: url('./img/img1.jpg');
+    background-size: cover;
+}
+
+main .main_form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* In signup.css */
+
+.main_form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 211, 211, 0.486);
+    border-radius: 10px;
+}
+
+.main_form form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba( 74, 72, 72, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.main_form form h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.main_form form div{
+    padding: 1.5rem;
+    width: 80%;
+}
+
+
+.main_form form .first{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_form form input{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.main_form form .first label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.main_form form .first input{
+    padding: 10px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.main_form form .sec{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_form form .sec label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.main_form form .sec input{
+    padding: 10px;
+    margin-top: 0.75rem;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+.main_form form .three{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_form form .three label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.main_form form .three input{
+    padding: 10px;
+    margin-top: 0.75rem;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.main_form form .four{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_form form .four label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.main_form form .four input{
+    padding: 10px;
+    margin-top: 0.75rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.main_form form .form_btn{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--primary-eigth);
+}
+
+.main_form form .form_btn:hover{
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s ease;
+}
